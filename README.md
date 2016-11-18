@@ -9,6 +9,10 @@ You can compile it with MPIC++ compiller :
 
 `mpic++ -std=c++0x -O2 lanczos-mpi.cpp -lm -o lanczos-mpi`
 
+Lomonosov requires static libstdc++ to be linked:
+
+`mpic++ -std=c++0x -O2 lanczos-mpi.cpp -lm -static-libstdc++ -o lanczos-mpi`
+
 
 ## Running ##
 After compillation here in repo's directory lanczos-mpi had been created.
