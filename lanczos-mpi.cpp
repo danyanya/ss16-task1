@@ -76,8 +76,8 @@ int main (int argc, char **argv)
 
     const int iter_count = 25;
     const int one_step = 10000;
-    const int start_index = 50000;
-    const int stop_index = 400000;
+    const int start_index = 10000;
+    const int stop_index = 200000;
 
     MPI_Status status;
     ierr = MPI_Init(&argc, &argv);
@@ -125,7 +125,9 @@ int main (int argc, char **argv)
             shift_x = rows_master + (proc_id - 1) * rows_worker;
             gen_matrix(a_rows, rows_worker, index, seed, shift_x);
         }
-
+#ifdef DEBUG
+        cout << "HERE !! " << proc_id << endl;
+#endif
         /* Produce iter_count number of iterations */
         double start_time = MPI_Wtime();
         for (int iter = 0; iter < iter_count; ++iter) {
@@ -236,6 +238,9 @@ int main (int argc, char **argv)
                 }
             }
         }
+#ifdef DEBUG
+        cout << "HERE !!!!! " << proc_id << endl;
+#endif
 
         /* Write answer to stdout and free all memory */
         double uptime = MPI_Wtime() - start_time;

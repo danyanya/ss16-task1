@@ -1,6 +1,7 @@
 # ss16-task1
-# Lanczos algorithm MPI realisation #
-Lanczos algogithm from algowiki-project.ru
+# Lanczos algorithm MPI realization #
+Lanczos algogithm from algowiki-project.ru.
+
 Full text you can find here: https://goo.gl/RTgE4m
 
 ## Compile and usage ##
@@ -10,7 +11,8 @@ You can compile it with MPIC++ compiller :
 
 
 ## Running ##
-After compillation here in repo's directory lanczos-mpi had been created
+After compillation here in repo's directory lanczos-mpi had been created.
+
 And you can run it with next command :
 
 `mpirun -np <X> lanczos-mpi`
