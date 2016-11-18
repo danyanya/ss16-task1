@@ -19,7 +19,7 @@ And you can run it with next command :
 
 ## Authors ##
 
-Made by Sliusar Daniil and Grigoriev Micheil
+Made by Sliusar Daniil and Grigoryev Mikhail
 for superprac 2016 course and tested on Lomonosov supercomputer.
 
 Moscow 2016 
