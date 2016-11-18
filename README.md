@@ -1,6 +1,7 @@
 # ss16-task1
 # Lanczos algorithm MPI realisation #
 Lanczos algogithm from algowiki-project.ru
+Full text you can find here: https://goo.gl/RTgE4m
 
 ## Compile and usage ##
 You can compile it with MPIC++ compiller :
